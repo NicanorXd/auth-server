@@ -1,0 +1,79 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\PC\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add gm
+
+PATH: 
+  C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\PC\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Intel\WiFi\bin;C:\Program Files\Common Files\Intel\WirelessCommon;C:\Program Files\nodejs;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\laragon\bin\php\php-7.2.19-Win32-VC15-x64;C:\ProgramData\ComposerSetup\bin;C:\Program Files\Java\jdk1.8.0_211\bin;C:\flutter\bin;C:\Program Files (x86)\Microsoft SQL Server\80\Tools\Binn;C:\Program Files (x86)\Microsoft SQL Server\90\Tools\binn;C:\Program Files (x86)\Microsoft SQL Server\90\DTS\Binn;C:\Program Files (x86)\Microsoft SQL Server\90\Tools\Binn\VSShell\Common7\IDE;C:\Users\PC\AppData\Local\Microsoft\WindowsApps;C:\Users\PC\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\PC\AppData\Roaming\npm;C:\Users\PC\AppData\Local\Android\Sdk\build-tools;C:\Users\PC\AppData\Roaming\Composer\vendor\bin
+
+Yarn version: 
+  1.22.0
+
+Node version: 
+  12.16.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/geoip-lite/-/geoip-lite-1.4.2.tgz: unexpected end of file
+      at Zlib.zlibOnError [as onerror] (zlib.js:180:17)
+
+npm manifest: 
+  {
+    "name": "adographql",
+    "version": "4.1.0",
+    "adonis-version": "4.1.0",
+    "description": "Adonisjs boilerplate for API server with pre-configured JWT",
+    "main": "index.js",
+    "scripts": {
+      "start": "node server.js",
+      "test": "node ace test"
+    },
+    "keywords": [
+      "adographql",
+      "adonis-graphql-yardev"
+    ],
+    "author": "",
+    "license": "UNLICENSED",
+    "private": true,
+    "dependencies": {
+      "@adonisjs/ace": "^5.0.8",
+      "@adonisjs/auth": "^3.0.7",
+      "@adonisjs/bodyparser": "^2.0.5",
+      "@adonisjs/cors": "^1.0.7",
+      "@adonisjs/drive": "^1.0.4",
+      "@adonisjs/fold": "^4.0.9",
+      "@adonisjs/framework": "^5.0.9",
+      "@adonisjs/ignitor": "^2.0.8",
+      "@adonisjs/lucid": "^6.1.3",
+      "@adonisjs/mail": "^3.0.9",
+      "@adonisjs/validator": "^5.0.6",
+      "@adonisjs/websocket": "^1.0.12",
+      "adonis-apidoc": "0.0.2",
+      "adonis-apollo-server": "^1.0.2",
+      "apollo-upload-client": "^11.0.0",
+      "axios": "^0.19.2",
+      "geoip-lite": "^1.4.0",
+      "graphql": "^14.5.4",
+      "graphql-import": "^0.7.1",
+      "graphql-request": "^1.8.2",
+      "graphql-tools": "^4.0.5",
+      "graphql-upload": "^8.0.7",
+      "json-essalud": "^1.0.0",
+      "moment": "^2.27.0",
+      "mysql": "^2.17.1",
+      "node-fetch": "^2.6.0",
+      "random": "^2.2.0",
+      "slugify": "^1.3.4",
+      "validator-error-adonis": "^1.0.0"
+    },
+    "devDependencies": {},
+    "autoload": {
+      "App": "./app"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

@@ -1,0 +1,662 @@
+{
+    "InstallerController.handle": {
+        "name": "InstallerController.handle",
+        "url": "api/installer",
+        "description": "Instalar métodos del sistema",
+        "action_type": "CREATE"
+    },
+    "FileController.findFilePublic": {
+        "name": "FileController.findFilePublic",
+        "url": "find_file_public",
+        "description": "Obtener archivo publico",
+        "action_type": "VIEW"
+    },
+    "FileController.findFileLocal": {
+        "name": "FileController.findFileLocal",
+        "url": "find_file_local",
+        "description": "Obtener archivo local",
+        "action_type": "VIEW"
+    },
+    "RedirectController.index": {
+        "name": "RedirectController.index",
+        "url": "redirect",
+        "description": "Redirigir datos",
+        "action_type": "VIEW"
+    },
+    "SedeController.index": {
+        "name": "SedeController.index",
+        "url": "api/sede",
+        "description": "Listar sedes",
+        "action_type": "VIEW"
+    },
+    "SedeController.store": {
+        "name": "SedeController.store",
+        "url": "api/sede",
+        "description": "Crear sede",
+        "action_type": "CREATE"
+    },
+    "SedeController.show": {
+        "name": "SedeController.show",
+        "url": "apisede/:id",
+        "description": "Obtener sede",
+        "action_type": "VIEW"
+    },
+    "SystemController.me": {
+        "name": "SystemController.me",
+        "url": "api/system/auth/me",
+        "description": "Obtener sistema por su token privado",
+        "action_type": "VIEW"
+    },
+    "SystemController.index": {
+        "name": "SystemController.index",
+        "url": "api/system",
+        "description": "Listar sistemas",
+        "action_type": "VIEW"
+    },
+    "SystemController.store": {
+        "name": "SystemController.store",
+        "url": "api/system",
+        "description": "Crear sistemas",
+        "action_type": "CREATE"
+    },
+    "SystemController.show": {
+        "name": "SystemController.show",
+        "url": "api/system/:id",
+        "description": "Obtener sistema",
+        "action_type": "VIEW"
+    },
+    "SystemController.update": {
+        "name": "SystemController.update",
+        "url": "api/system/:id",
+        "description": "Actualizar sistema",
+        "action_type": "UPDATE"
+    },
+    "SystemController.generateToken": {
+        "name": "SystemController.generateToken",
+        "url": "api/system/:id/generate_token",
+        "description": "Actualizar token del sistema",
+        "action_type": "UPDATE"
+    },
+    "SystemController.method": {
+        "name": "SystemController.method",
+        "url": "api/system/:id/method",
+        "description": "Lista métodos del system",
+        "action_type": "VIEW"
+    },
+    "SystemController.module": {
+        "name": "SystemController.module",
+        "url": "api/system/:id/module",
+        "description": "Lista modulos del system",
+        "action_type": "VIEW"
+    },
+    "ModuleController.store": {
+        "name": "ModuleController.store",
+        "url": "api/module",
+        "description": "Crear módulo del sistema",
+        "action_type": "CREATE"
+    },
+    "ModuleController.update": {
+        "name": "ModuleController.update",
+        "url": "api/module/:id",
+        "description": "Actualizar módulo del sistema",
+        "action_type": "UPDATE"
+    },
+    "ModuleController.delete": {
+        "name": "ModuleController.delete",
+        "url": "api/module/:id",
+        "description": "Eliminar módulo del sistema",
+        "action_type": "DELETE"
+    },
+    "AppController.me": {
+        "name": "AppController.me",
+        "url": "api/app/me",
+        "description": "Obtener applicación cliente",
+        "action_type": "VIEW"
+    },
+    "AppController.authorize": {
+        "name": "AppController.authorize",
+        "url": "api/apps/authorize",
+        "description": "validar app cliente",
+        "action_type": "VIEW"
+    },
+    "AppController.index": {
+        "name": "AppController.index",
+        "url": "api/app",
+        "description": "Listar aplicaciones",
+        "action_type": "VIEW"
+    },
+    "AppController.store": {
+        "name": "AppController.store",
+        "url": "api/app",
+        "description": "Crear aplicaciones",
+        "action_type": "CREATE"
+    },
+    "AppController.show": {
+        "name": "AppController.show",
+        "url": "api/app/:id",
+        "description": "Obtener aplicación",
+        "action_type": "VIEW"
+    },
+    "AppController.state": {
+        "name": "AppController.show",
+        "url": "api/app/:id/state",
+        "description": "Obtener aplicación",
+        "action_type": "VIEW"
+    },
+    "AppController.update": {
+        "name": "AppController.update",
+        "url": "api/app/:id",
+        "description": "Actualizar aplicación",
+        "action_type": "UPDATE"
+    },
+    "AppController.configModule": {
+        "name": "AppController.configModule",
+        "url": "api/app/:id/config_module",
+        "description": "Obtener modulos de la aplicación",
+        "action_type": "VIEW"
+    },
+    "AppController.block": {
+        "name": "AppController.block",
+        "url": "api/app/:id/block",
+        "description": "Obtener aplicación",
+        "action_type": "VIEW"
+    },
+    "BlockMethodAppController.store": {
+        "name": "BlockMethodAppController.store",
+        "url": "api/block_method_app",
+        "description": "Bloquear method a la aplicación",
+        "action_type": "CREATE"
+    },
+    "BlockMethodAppController.delete": {
+        "name": "BlockMethodAppController.delete",
+        "url": "api/block_method_app/:id",
+        "description": "Bloquear method a la aplicación",
+        "action_type": "CREATE"
+    },
+    "EntityController.index": {
+        "name": "EntityController.index",
+        "url": "api/entity",
+        "description": "Listar Entidades",
+        "action_type": "VIEW"
+    },
+    "EntityController.store": {
+        "name": "EntityController.store",
+        "url": "api/entity",
+        "description": "Crear Entidad",
+        "action_type": "CREATE"
+    },
+    "EntityController.show": {
+        "name": "EntityController.show",
+        "url": "api/entity/:id",
+        "description": "Obtener Entidad",
+        "action_type": "VIEW"
+    },
+    "EntityController.update": {
+        "name": "EntityController.update",
+        "url": "api/entity/:id",
+        "description": "Actualizar Entidad",
+        "action_type": "UPDATE"
+    },
+    "DependenciaController.index": {
+        "name": "DependenciaController.index",
+        "url": "api/dependencia",
+        "description": "Listar dependencias",
+        "action_type": "VIEW"
+    },
+    "DependenciaController.store": {
+        "name": "DependenciaController.store",
+        "url": "api/dependencia",
+        "description": "Crear dependencia",
+        "action_type": "CREATE"
+    },
+    "DependenciaController.show": {
+        "name": "DependenciaController.show",
+        "url": "api/dependencia/:id",
+        "description": "Obtener dependencia",
+        "action_type": "VIEW"
+    },
+    "DependenciaController.update": {
+        "name": "DependenciaController.update",
+        "url": "api/dependencia/:id",
+        "description": "Actualizar dependencia",
+        "action_type": "UPDATE"
+    },
+    "DependenciaController.userEntity": {
+        "name": "DependenciaController.userEntity",
+        "url": "api/dependencia/:id/user_entity/:entity_id",
+        "description": "listar usuario de la dependencia según entidad",
+        "action_type": "VIEW"
+    },
+    "DependenciaController.perfilLaboral": {
+        "name": "DependenciaController.perfilLaboral",
+        "url": "api/dependencia/:id/perfil_laboral",
+        "description": "listar perfil laboral de la dependencia",
+        "action_type": "VIEW"
+    },
+    "PerfilLaboralController.index": {
+        "name": "PerfilLaboralController.index",
+        "url": "api/perfil_laboral",
+        "description": "listar perfil laboral",
+        "action_type": "VIEW"
+    },
+    "PerfilLaboralController.show": {
+        "name": "PerfilLaboralController.show",
+        "url": "api/perfil_laboral/:id",
+        "description": "Obtener perfil laboral",
+        "action_type": "VIEW"
+    },
+    "DocumentTypeController.index": {
+        "name": "DocumentTypeController.index",
+        "url": "api/document_type",
+        "description": "Listar tipo de documentos",
+        "action_type": "VIEW"
+    },
+    "PersonController.index": {
+        "name": "PersonController.index",
+        "url": "api/person",
+        "description": "Listar personas",
+        "action_type": "VIEW"
+    },
+    "PersonController.store": {
+        "name": "PersonController.store",
+        "url": "api/person",
+        "description": "Crear persona",
+        "action_type": "CREATE"
+    },
+    "PersonController.show": {
+        "name": "PersonController.show",
+        "url": "api/person/:id",
+        "description": "Obtener persona",
+        "action_type": "VIEW"
+    },
+    "PersonController.findPeople": {
+        "name": "PersonController.findPeople",
+        "url": "api/find_people",
+        "description": "Listar personas",
+        "action_type": "VIEW"
+    },
+    "PersonController.findPerson": {
+        "name": "PersonController.findPerson",
+        "url": "api/find_person/:id",
+        "description": "Listar personas",
+        "action_type": "VIEW"
+    },
+    "PersonController.update": {
+        "name": "PersonController.update",
+        "url": "api/person/:id",
+        "description": "Actualizar datos personales según ID",
+        "action_type": "UPDATE"
+    },
+    "PersonController.user": {
+        "name": "PersonController.user",
+        "url": "api/person/:id/user",
+        "description": "Obtener el usuario de la persona por el ID",
+        "action_type": "VIEW"
+    },
+    "Auth/LoginController.login": {
+        "name": "Auth/LoginController.login",
+        "url": "api/login",
+        "description": "Generar token de authentication",
+        "action_type": "VIEW"
+    },
+    "Auth/VerifyAccountController.verifyAccount": {
+        "name": "Auth/VerifyAccountController.verifyAccount",
+        "url": "verify_account",
+        "description": "Verificar cuenta",
+        "action_type": "UPDATE"
+    },
+    "Auth/LogoutController.logout": {
+        "name": "Auth/LogoutController.logout",
+        "url": "api/logout",
+        "description": "Revocar token de authentication",
+        "action_type": "UPDATE"
+    },
+    "Auth/RegisterController.register": {
+        "name": "Auth/RegisterController.register",
+        "url": "api/register",
+        "description": "Crear nuevo usuario",
+        "action_type": "CREATE"
+    },
+    "Auth/AuthController.me": {
+        "name": "Auth/AuthController.me",
+        "url": "api/me",
+        "description": "Obtener datos del usuario autenticado",
+        "action_type": "VIEW"
+    },
+    "Auth/AuthController.menu": {
+        "name": "Auth/AuthController.menu",
+        "url": "api/auth/menu",
+        "description": "Obtener menu según la app y permisos del usuario",
+        "action_type": "VIEW"
+    },
+    "Auth/AuthPermissionController.handle": {
+        "name": "Auth/AuthPermissionController.handle",
+        "url": "api/auth/permission/:slug",
+        "description": "Obtener permisos según la app y permisos del usuario",
+        "action_type": "VIEW"
+    },
+    "Auth/AuthPermissionController.type": {
+        "name": "Auth/AuthPermissionController.type",
+        "url": "api/auth/permission/:slug/:type",
+        "description": "Validar permiso del usuario según el tipo",
+        "action_type": "VIEW"
+    },
+    "Auth/AuthController.entity": {
+        "name": "Auth/AuthController.entity",
+        "url": "api/auth/entity",
+        "description": "Listar entidades según el usuario autenticado",
+        "action_type": "VIEW"
+    },
+    "Auth/AuthController.entityID": {
+        "name": "Auth/AuthController.entityID",
+        "url": "api/auth/entity/:id",
+        "description": "Obtener entidad según el usuario autenticado",
+        "action_type": "VIEW"
+    },
+    "Auth/AuthController.dependencia": {
+        "name": "Auth/AuthController.dependencia",
+        "url": "api/auth/dependencia/:entityId",
+        "description": "Listar dependencia según el usuario autenticado y entidad",
+        "action_type": "VIEW"
+    },
+    "Auth/AuthController.dependenciaID": {
+        "name": "Auth/AuthController.dependenciaID",
+        "url": "api/auth/dependencia/:entityId/:id",
+        "description": "Obtener dependencia según el usuario autenticado y entidad",
+        "action_type": "VIEW"
+    },
+    "Auth/AuthController.tokens": {
+        "name": "Auth/AuthController.tokens",
+        "url": "api/auth/tokens",
+        "description": "Listar inicio de sessiónes del usuario autenticado",
+        "action_type": "VIEW"
+    },
+    "Auth/AuthController.update": {
+        "name": "Auth/AuthController.update",
+        "url": "api/auth/update",
+        "description": "Actualizar datos del usuario autenticado",
+        "action_type": "UPDATE"
+    },
+    "Auth/AuthController.changeImage": {
+        "name": "Auth/AuthController.changeImage",
+        "url": "api/auth/change_image",
+        "description": "Actualizar imagen de perfil del usuario autenticado",
+        "action_type": "UPDATE"
+    },
+    "Auth/AuthController.changePassword": {
+        "name": "Auth/AuthController.changePassword",
+        "url": "api/auth/change_password",
+        "description": "Actualizar contraseña del usuario autenticado",
+        "action_type": "UPDATE"
+    },
+    "Auth/NotificationController.index": {
+        "name": "Auth/NotificationController.index",
+        "url": "api/auth/notification",
+        "description": "Listar notificaciones del usuario autenticado",
+        "action_type": "VIEW"
+    },
+    "Auth/NotificationController.store": {
+        "name": "Auth/NotificationController.store",
+        "url": "api/auth/notification",
+        "description": "Emitir notificaciones",
+        "action_type": "CREATE"
+    },
+    "Auth/NotificationController.show": {
+        "name": "Auth/NotificationController.show",
+        "url": "api/auth/notification/:id",
+        "description": "Obtener notificación",
+        "action_type": "VIEW"
+    },
+    "Auth/NotificationController.markAsRead": {
+        "name": "Auth/NotificationController.markAsRead",
+        "url": "api/auth/notification/:id/mark_as_read",
+        "description": "Marcar como  leído la notificación del usuario autenticado",
+        "action_type": "UPDATE"
+    },
+    "Auth/NotificationController.markAsReadAll": {
+        "name": "Auth/NotificationController.markAsReadAll",
+        "url": "api/auth/notification/mark_as_read_all",
+        "description": "Marcar todas las notificación del usuario autenticado como leídos",
+        "action_type": "UPDATE"
+    },
+    "Auth/VerifyAccountController.resendVerificationCode": {
+        "name": "Auth/VerifyAccountController.resendVerificationCode",
+        "url": "api/resend_verification_code",
+        "description": "Enviar código de recuperación",
+        "action_type": "UPDATE"
+    },
+    "Auth/RecoveryPasswordController.recoveryPassword": {
+        "name": "Auth/RecoveryPasswordController.recoveryPassword",
+        "url": "api/recovery_password",
+        "description": "Generar y enviar codigo de recuperación al email",
+        "action_type": "UPDATE"
+    },
+    "Auth/RecoveryPasswordController.resetPassword": {
+        "name": "Auth/RecoveryPasswordController.resetPassword",
+        "url": "api/reset_password",
+        "description": "Restaurar contraseña de usuario",
+        "action_type": "UPDATE"
+    },
+    "UserController.index": {
+        "name": "UserController.index",
+        "url": "api/user",
+        "description": "Listar usuarios",
+        "action_type": "VIEW"
+    },
+    "UserController.show": {
+        "name": "UserController.show",
+        "url": "api/user/:id",
+        "description": "Obtener usuario",
+        "action_type": "VIEW"
+    },
+    "UserController.update": {
+        "name": "UserController.update",
+        "url": "api/user/:id",
+        "description": "actualizar usuario",
+        "action_type": "UPDATE"
+    },
+    "UserController.permissions": {
+        "name": "UserController.permissions",
+        "url": "api/user/:id/permissions",
+        "description": "Listar permisos del usuario",
+        "action_type": "VIEW"
+    },
+    "UserController.state": {
+        "name": "UserController.state",
+        "url": "api/user/:id/state",
+        "description": "Actualizar estado del usuario",
+        "action_type": "UPDATE"
+    },
+    "UserController.block": {
+        "name": "UserController.block",
+        "url": "api/user/:id/block",
+        "description": "Obtener métodos bloqueados del usuario",
+        "action_type": "VIEW"
+    },
+    "UserController.entity": {
+        "name": "UserController.entity",
+        "url": "api/user/:id/entity",
+        "description": "Listar entidades del usuario",
+        "action_type": "VIEW"
+    },
+    "UserController.dependencia": {
+        "name": "UserController.dependencia",
+        "url": "api/user/:id/entity/:entity_id/dependencia",
+        "description": "Listar dependencias del usuario por entidades",
+        "action_type": "VIEW"
+    },
+    "UserController.person": {
+        "name": "UserController.person",
+        "url": "api/user/:id/person",
+        "description": "Listar dependencias del usuario por entidades",
+        "action_type": "VIEW"
+    },
+    "UserController.autoResetPassword": {
+        "name": "UserController.autoResetPassword",
+        "url": "api/user/:id/auto_reset_password",
+        "description": "Auto generar una contraseña",
+        "action_type": "UPDATE"
+    },
+    "PermissionController.index": {
+        "name": "PermissionController.index",
+        "url": "api/permission",
+        "description": "Listar Permisos",
+        "action_type": "VIEW"
+    },
+    "PermissionController.store": {
+        "name": "PermissionController.store",
+        "url": "api/permission",
+        "description": "Crear Permisos",
+        "action_type": "CREATE"
+    },
+    "PermissionController.destroy": {
+        "name": "PermissionController.destroy",
+        "url": "api/permission/:id",
+        "description": "Eliminar Permisos",
+        "action_type": "DELETE"
+    },
+    "BlockMethodUserController.store": {
+        "name": "BlockMethodUserController.store",
+        "url": "api/block_method_user",
+        "description": "Bloquear el methodo al usuario",
+        "action_type": "CREATE"
+    },
+    "BlockMethodUserController.delete": {
+        "name": "BlockMethodUserController.delete",
+        "url": "api/block_method_user/:id",
+        "description": "Quitar bloqueo de método al usuario",
+        "action_type": "DELETE"
+    },
+    "ConfigEntityController.store": {
+        "name": "ConfigEntityController.store",
+        "url": "api/config_entity",
+        "description": "Asociar una entidad al usuario",
+        "action_type": "CREATE"
+    },
+    "ConfigEntityController.destroy": {
+        "name": "ConfigEntityController.destroy",
+        "url": "api/config_entity/:id",
+        "description": "Quitar entidad al usuario",
+        "action_type": "DELETE"
+    },
+    "ConfigNotificationController.index": {
+        "name": "ConfigNotificationController.index",
+        "url": "api/config_notification",
+        "description": "Listar configuración de notificaciones",
+        "action_type": "VIEW"
+    },
+    "ConfigNotificationController.show": {
+        "name": "ConfigNotificationController.show",
+        "url": "api/config_notification/:id",
+        "description": "Obtener configuración de notificación",
+        "action_type": "VIEW"
+    },
+    "ConfigEntityDependenciaController.store": {
+        "name": "ConfigEntityDependenciaController.store",
+        "url": "api/config_entity_dependencia",
+        "description": "Asocciar dependencia a una entidad",
+        "action_type": "CREATE"
+    },
+    "ConfigEntityDependenciaController.destroy": {
+        "name": "ConfigEntityDependenciaController.destroy",
+        "url": "api/config_entity_dependencia/:id",
+        "description": "Quitar dependencia a entidad",
+        "action_type": "DELETE"
+    },
+    "PersonController.getDocumentType": {
+        "name": "PersonController.getDocumentType",
+        "url": "api/get_document_type",
+        "description": "Listar tipo de documento",
+        "action_type": "VIEW"
+    },
+    "MailController.to": {
+        "name": "MailController.to",
+        "url": "api/mail/to",
+        "description": "Enviar mail",
+        "action_type": "CREATE"
+    },
+    "AuditController.create": {
+        "name": "AuditController.create",
+        "url": "api/audit",
+        "description": "Crear auditoria",
+        "action_type": "CREATE"
+    },
+    "ConfigModuleController.store": {
+        "name": "ConfigModuleController.store",
+        "url": "api/config_module",
+        "description": "Asociar un modulo a una aplicación",
+        "action_type": "CREATE"
+    },
+    "ConfigModuleController.update": {
+        "name": "ConfigModuleController.update",
+        "url": "api/config_module/:id",
+        "description": "Actualizar un módulo a una aplicación",
+        "action_type": "UPDATE"
+    },
+    "ConfigModuleController.delete": {
+        "name": "ConfigModuleController.delete",
+        "url": "api/config_module/:id",
+        "description": "Eliminar un módulo a una aplicación",
+        "action_type": "DELETE"
+    },
+    "CodeAuthorizationController.generate": {
+        "name": "ConfigModuleController.store",
+        "url": "api/code_authorization/:person_id",
+        "description": "Crear código de autorización",
+        "action_type": "CREATE"
+    },
+    "CodeAuthorizationController.validate": {
+        "name": "CodeAuthorizationController.validate",
+        "url": "api/code_authorization/:person_id/validate",
+        "description": "Validar código de autorización",
+        "action_type": "UPDATE"
+    },
+    "BadgeController.index": {
+        "name": "BadgeController.index",
+        "url": "api/badge",
+        "description": "Listar badge ubigeo",
+        "action_type": "VIEW"
+    },
+    "BadgeController.findBadge": {
+        "name": "BadgeController.findBadge",
+        "url": "api/find_badge/:id",
+        "description": "Obtener badge ubigeo",
+        "action_type": "VIEW"
+    },
+    "BadgeController.getDepartamentos": {
+        "name": "BadgeController.getDepartamentos",
+        "url": "api/departamento",
+        "description": "Obtener departamentos del ubigeo",
+        "action_type": "VIEW"
+    },
+    "BadgeController.getProvincias": {
+        "name": "BadgeController.getProvincias",
+        "url": "api/departamento/:cod_dep/provincia",
+        "description": "Obtener provincias según departamento del ubigeo",
+        "action_type": "VIEW"
+    },
+    "BadgeController.getDistritos": {
+        "name": "BadgeController.getDistritos",
+        "url": "api/departamento/:cod_dep/provincia/:cod_pro/distrito",
+        "description": "Obtener provincias según departamento del ubigeo",
+        "action_type": "VIEW"
+    },
+    "ApiController.store": {
+        "name": "ApiController.store",
+        "url": "api/apis",
+        "description": "Crear nueva api externas",
+        "action_type": "CREATE"
+    },
+    "ApiController.getResolver": {
+        "name": "ApiController.getResolver",
+        "url": "api/apis/:slug/get_resolver",
+        "description": "Wrapper para resolver datos de otras apis conectadas al sistema",
+        "action_type": "VIEW"
+    },
+    "Public/PersonController.store": {
+        "name": "Public/PersonController.store",
+        "url": "api/public/people",
+        "description": "Crear persona pública",
+        "action_type": "CREATE"
+    }
+}

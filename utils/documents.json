@@ -1,0 +1,6 @@
+[
+    { "key": "01", "value": "01", "text": "DNI/LE" },
+    { "key": "04", "value": "04", "text": "CARNET EXT" },
+    { "key": "07", "value": "07", "text": "PASAPORTE" },
+    { "key": "09", "value": "09", "text": "OTRO" }
+]

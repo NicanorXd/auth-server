@@ -1,0 +1,54 @@
+
+
+type Response {
+    code: String!
+    success: Boolean!
+    message: String
+}
+
+
+# respuesta para el login
+type LoginResponse {
+    code: String!
+    success: Boolean!
+    message: String
+    sistemas: [Sistema]
+}
+
+
+# respuesta para el user
+type UserResponse {
+    code: String!
+    success: Boolean!
+    message: String
+    user: User
+}
+
+
+# respuesta listar a todos los usuarios
+type UsersResponse {
+    total: Int
+    perPage: Int
+    lastPage: Int
+    page: Int
+    data: [User]
+}
+
+
+# respuesta listar a todas las personas
+type PersonasResponse {
+    total: Int
+    perPage: Int
+    lastPage: Int
+    page: Int
+    data: [Persona]
+}
+
+
+# respuesta para la devolucion de un sistema
+type SistemaResponse {
+    code: String!
+    success: Boolean!
+    message: String
+    sistema: Sistema
+}

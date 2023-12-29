@@ -1,0 +1,49 @@
+# scalar
+scalar Upload
+
+# importaciones
+# import * from "objects.graphql"
+# import * from "inputs.graphql"
+# import * from "responses.graphql"
+
+""" Root Query Type """
+type Query {
+    """ obtener al usuario autenticado """
+    getAuth: User
+    """ obtener listado usuarios """
+    getUsers(like: String, page: Int): UsersResponse
+    # obtener listado de personas
+    getPersonas(like: String, page: Int): PersonasResponse
+    """ obtener listado de los perfiles del usuario autenticado """
+    getAuthPerfiles: [Sistema],
+    """ obtener un listado de las personas por ids """
+    getPersonasID(ids: [ID!], page: Int): PersonasResponse
+    """ obtener a una persona en especifica """
+    findPersona(id: ID!): Persona
+}
+
+""" Root Mutation """
+type Mutation {
+    # crear un nuevo usuario
+    createUser(username: String!, email: String!, password: String!, persona_id: Int!): UsersResponse
+    # activar cuenta de usuario
+    verifyAcount(token_verification: String): Response
+    # authentication
+    login(email: String!, password: String!): LoginResponse
+    # cerrar sesión
+    logout(token: String): Response
+    # cambiar contraseña
+    changePassword(old_password: String!, new_password: String!): User 
+    # recuperar contraseña
+    recoveryPassword(email: String!): Response
+    # restaurar contraseña
+    resetPassword(reset_password: String!, new_password: String!): UserResponse
+    # autorizacion por perfil
+    authorize(metodo: String!): Response
+    # crear sistema
+    createSystem(input: createSystemInput): SistemaResponse
+    # asignación del perfil a los usuarios
+    assignMetodos(metodo_ids: [Int]): Response
+    # crear persona
+    createPerson(input: createPersonInput): Response
+}

@@ -1,0 +1,98 @@
+
+""" tipo para subidas de archivos """
+type File {
+    filname: String!
+    mimetype: String!
+    encoding: String!
+}
+
+
+""" tipo persona """
+type Persona {
+    id: ID!
+    ape_paterno: String!
+    ape_materno: String!
+    nombres: String!
+    nombre_completo: String!
+    tipo_documento: Int!
+    numero_de_documento: String!
+    fecha_de_nacimiento: String!
+    sexo: String
+    direccion: String
+    telefono: String
+    imagen: String
+    activo: Int!
+}
+
+
+""" Tipo de usuario """
+type User {
+    id: ID!
+    username: String!
+    email: String!
+    token_verification: String
+    persona_id: Int!
+    activo: Boolean!
+    persona: Persona
+}
+
+
+""" tipo token """
+type Token {
+    id: ID!
+    user: User!
+    token: String!
+    type: String
+    is_revoked: Int!
+}
+
+
+""" tipo Sistema """
+type Sistema {
+    id: ID!
+    nombre: String!
+    alias: String!
+    descripcion: String
+    email: String!
+    icono: String
+    ruta: String!
+    token: String!
+    version: String
+    created_at: String
+    updated_at: String
+    modulos: [Modulo]
+}
+
+
+""" tipo modulo """
+type Modulo {
+    id: ID!
+    nombre: String!
+    alias: String!
+    slug: String!
+    descripcion: String
+    icono: String
+    sistema_id: Int!
+    sistema: Sistema
+    metodos: [Metodo]
+}
+
+
+""" tipo de metodo """
+type Metodo {
+    id: ID!
+    nombre: String!
+    alias: String!
+    descripcion: String
+    modulo: Modulo
+}
+
+
+""" Tipo perfil """ 
+type Perfil {
+    id: ID!
+    user_id: Int!
+    metodo_id: Int!
+    user: User
+    metodo: Metodo
+}

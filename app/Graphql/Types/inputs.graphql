@@ -1,0 +1,23 @@
+
+input createSystemInput {
+    nombre: String!
+    alias: String!
+    descripcion: String
+    email: String!
+    icono: String
+    ruta: String!
+    version: String!
+}
+
+input createPersonInput {
+    ape_paterno: String!
+    ape_materno: String!
+    nombres: String!
+    tipo_documento: Int!
+    numero_de_identidad: String!
+    fecha_de_nacimiento: String!
+    sexo: Int!
+    direccion: String
+    telefono: String!
+    imagen: Upload
+}

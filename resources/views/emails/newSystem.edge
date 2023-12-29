@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <h3 style="margin-top: 3em;">Hola {{ nombre }}, ahora tu sistema puede haceder al sistema 
+        de autenticacion. Para poder haceder al sistema de auth, tienes que copiar este token
+        <b style="color: blue"><small>{{ token }}</small></b> en la cabecera de solicitud <br><br>
+        <code>
+            headers: {
+                system: {{ token }}
+            }
+        </code>
+    </h3>
+    
+</body>
+</html>

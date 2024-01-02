@@ -16,8 +16,9 @@ const uid = require("uid");
 
 class UserController {
   index = async ({ request }) => {
-    let { query_search, state, page } = request.all();
-    const currentState = typeof state == "undefined" ? 1 : state;
+    let { query_search, estado, state, page } = request.all();
+    let currentState = state || estado;
+    currentState = typeof currentState == "undefined" ? 1 : currentState;
     let ids = collect(request.collect(["ids"]))
       .pluck("ids")
       .toArray();
